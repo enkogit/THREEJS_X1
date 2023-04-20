@@ -104,11 +104,11 @@ function App() {
           <Footer />
       </div>
       <div className='canvas dark'>
-        <Canvas style={{ background: 'black' }} camera={{ position: [0, 5, 15], fov: 50 }}>
+        <Canvas style={{ background: 'black' }} camera={{ position: [0, 6, 15], fov: 50 }}>
         <Universe />
           <Suspense fallback={<Loading />}>
             <SpinningEarth />
-            <mesh position={[0, -3, 0]} scale={0.015}>
+            <mesh position={[0, -5, 0]} scale={0.015}>
                   <Model />
             </mesh> 
             <OrbitingSphere radius={7} position={[0, 0, 0]} speed={0.5} />
