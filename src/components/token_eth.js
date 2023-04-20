@@ -30,7 +30,7 @@ export function TokenETH() {
                     margin: "5px",
                   }}
                 >
-                  <i>X-</i>TOKEN
+                  <i>X-</i>COIN
                 </h2>
                 <h2
                   style={{

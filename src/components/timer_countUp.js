@@ -10,7 +10,7 @@ export function TimerUp() {
   let interval = useRef();
 
   const startTimer = () => {
-    const startDate = new Date("April 20, 2023 00:00:00").getTime();
+    const startDate = new Date("April 20, 2023 07:35:00").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();

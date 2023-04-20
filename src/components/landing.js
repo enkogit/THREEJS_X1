@@ -1,5 +1,6 @@
 import React from 'react';
 import { TimerUp } from './timer_countUp';
+import { TimerDown } from './timer_countDown';
 
 export function Landing() {
 return (
@@ -40,9 +41,13 @@ return (
     <p className="bottom-space" style={{marginBottom:'300px'}} />
     <div className='row' style={{display:'flex', flexFlow:'column', alignItems:'center'}}>
 		<h3 style={{fontSize: '20px', padding: '5px 0px 5px 0px', opacity:1, letterSpacing: '0.5em'}}>
-			STARSHIP 4/20 LAUNCH
+			TIME SINCE STARSHIP 4/20 LAUNCH
 		</h3>
 		<TimerUp />
+		<h3 style={{fontSize: '20px', padding: '5px 0px 5px 0px', opacity:1, letterSpacing: '0.5em'}}>
+			NEXT TEST LAUNCH N.E.T:
+		</h3>
+		<TimerDown />
 	</div>
 </div>
 );
