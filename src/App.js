@@ -62,10 +62,10 @@ function SpinningEarth() {
 
   return (
     <>
-      <Sphere ref={earthRef} args={[2, 32, 32]}>
+      <Sphere ref={earthRef} args={[3, 32, 32]}>
         <meshStandardMaterial map={texture} bumpMap={bumpMap} bumpScale={0.05} />
       </Sphere>
-      <Sphere ref={cloudRef} args={[2.01, 32, 32]}>
+      <Sphere ref={cloudRef} args={[3.05, 32, 32]}>
         <meshStandardMaterial
           map={cloudMap}
           opacity={0.4}
@@ -104,7 +104,7 @@ function App() {
           <Footer />
       </div>
       <div className='canvas dark'>
-        <Canvas style={{ background: 'black' }} camera={{ position: [0, 0, 10], fov: 50 }}>
+        <Canvas style={{ background: 'black' }} camera={{ position: [0, 5, 15], fov: 50 }}>
         <Universe />
           <Suspense fallback={<Loading />}>
             <SpinningEarth />
